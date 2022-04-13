@@ -1,0 +1,715 @@
+.visually-hidden {
+  clip: rect(0, 0, 0, 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  border: 0;
+  position: absolute !important;
+}
+
+body {
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.page-header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 110px;
+  margin: 0 auto;
+}
+
+.page-header a {
+  color: #ffffff;
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+}
+
+.logo-img {
+  position: absolute;
+  top: -20px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.logo-text {
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  align-items: center;
+  max-width: 940px;
+  margin: 1px auto;
+  font-family: "Gentium Book Basic", "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.site-nav,
+.social-nav,
+.img-list {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.site-nav__item,
+.social-nav__item {
+  display: inline-block;
+  list-style: none;
+}
+
+.site-nav__link {
+  display: block;
+  padding: 50px 23px 40px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.socicon {
+  display: inline-block;
+  text-decoration: none;
+  background-image: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.socicon_twitter {
+  width: 25px;
+  height: 30px;
+  background-position: 3px 10px;
+}
+
+.socicon_youtube {
+  width: 25px;
+  height: 30px;
+  background-position: -34px 10px;
+}
+
+.socicon_facebook {
+  width: 25px;
+  height: 30px;
+  background-position: -65px 10px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 750px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #6a662d;
+  background-image: url("../img/hero-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-container {
+  display: block;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  width: 970px;
+  margin: 0 auto;
+  margin-left: -485px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.h-element {
+  position: relative;
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-size: 36px;
+  line-height: normal;
+  font-weight: 400;
+  margin: 0 auto;
+  color: #cc9900;
+}
+
+.hero .h-element {
+  margin-bottom: 87px;
+  font-size: 90px;
+  line-height: 120px;
+  opacity: 0.92;
+  color: #ffffff;
+}
+
+.hero__btn {
+  display: inline-block;
+  min-height: 19px;
+  width: 226px;
+  margin: 15px;
+  padding-bottom: 19px;
+  padding-top: 16px;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #000000;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero__btn:nth-of-type(2n) {
+  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.about {
+  min-height: 710px;
+  width: 100%;
+  padding-top: 1px;
+  background-color: #ffffff;
+}
+
+.about,
+.reservations {
+  background-image: url("../img/about-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  width: 1200px;
+  min-height: 625px;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+
+.about__figure {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  margin-left: 25px;
+  min-height: 550px;
+}
+
+.about__img {
+  margin-left: 75px;
+}
+
+.about__text {
+  width: 409px;
+  margin: 73px 20px 49px 20px;
+  text-align: center;
+}
+
+.ingredients {
+  min-height: 758px;
+  width: 100%;
+  padding-top: 1px;
+  background-color: #50633f;
+  background-image: url("../img/ing-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ingredients-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 557px;
+  width: 570px;
+  margin: 100px 0 auto auto;
+  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ingredients .h-element {
+  margin-bottom: 70px;
+  color: #ffffff;
+}
+
+.img-list li {
+  display: inline;
+  color: #ffffff;
+}
+
+.ingredients__text {
+  width: 409px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.img-list__element {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 45px 15px -7px 15px;
+  border: 5px solid #ffffff;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+}
+
+.img-list__img_1 {
+  background-image: url(../img/ing-1.jpeg);
+  background-position: -45px -30px;
+}
+
+.img-list__img_2 {
+  background-image: url(../img/ing-2.jpeg);
+  background-position: -40px -90px;
+}
+
+.img-list__img_3 {
+  background-image: url(../img/ing-3.jpeg);
+  background-position: -45px -15px;
+}
+
+.menu {
+  min-height: 994px;
+  width: 100%;
+  padding-top: 1px;
+  background-color: #ffffff;
+  background-image: url("../img/menu-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1170px;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: 95px;
+}
+
+.menu-column {
+  display: flex;
+  flex-direction: column;
+}
+
+caption.h-element {
+  margin-bottom: 70px;
+}
+
+.menu-column tbody {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.row-element {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+  font-family: "Yeseva One", Arial, sans-serif;
+  color: #cc9900;
+  font-size: 21px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #c89f2d;
+  border-bottom: 1px solid rgba(200, 159, 45, 0.3);
+}
+
+.table-text {
+  display: inline-block;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.special-dish {
+  padding: 0 5px 5px 5px;
+  margin: 0 -5px auto;
+  border: 1px solid rgba(200, 159, 45, 0.3);
+}
+
+.special-row {
+  border: none;
+}
+
+.special-element {
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  text-align: center;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #c89f2d;
+  margin-top: -23px;
+  margin-right: -6px;
+  padding: 0;
+  padding-bottom: 3px;
+}
+
+.reviews {
+  min-height: 758px;
+  width: 100%;
+  padding-top: 1px;
+  background-color: #534f45;
+  background-image: url("../img/reviews-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.article-reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 770px;
+  margin: 0 auto;
+  margin-top: 100px;
+  min-height: 557px;
+  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.article-reviews .h-element {
+  color: #ffffff;
+}
+
+.reviews__text {
+  width: 630px;
+  position: relative;
+  font-family: "Gentium Book Basic", "Times New Roman", serif;
+  font-size: 25px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 65px;
+}
+
+.reviews__cite {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 45px;
+  color: #ffffff;
+  font-style: normal;
+}
+
+.reservations {
+  min-height: 710px;
+  width: 100%;
+  padding-top: 1px;
+  background-color: #ffffff;
+}
+
+.reservations-container {
+  display: flex;
+  justify-content: space-around;
+  width: 1210px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.reservations-img-container {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+}
+
+.reservations-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 508px;
+  width: 430px;
+  text-align: center;
+}
+
+.reservations-form-container .h-element {
+  margin-top: 0;
+  margin-bottom: 55px;
+}
+
+.reservations-text-container {
+  min-height: 145px;
+  width: 417px;
+  margin-bottom: 45px;
+}
+
+.reservations__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 208px;
+  width: 430px;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.reservations__label {
+  display: block;
+  text-align: start;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #cc9900;
+}
+
+.reservations__input {
+  display: block;
+  width: 200px;
+  height: 36px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  margin-bottom: 25px;
+  font-style: italic;
+  font-weight: 400;
+  color: #7c7c7c;
+  background-color: transparent;
+  border: 1px solid #7c7c7c;
+  border-radius: 0;
+}
+
+.reservations__input:focus {
+  outline: none;
+  border-color: #cc9900;
+  border-radius: 0;
+}
+
+.reservations__btn {
+  display: block;
+  height: 36px;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: #cc9900;
+  border: 0;
+}
+
+.main-footer {
+  min-height: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1px;
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.footer-container {
+  position: relative;
+  height: 218px;
+  width: 370px;
+  text-align: center;
+}
+
+.footer-container .h-element {
+  font-size: 21px;
+  margin: 15px auto 50px auto;
+  color: #ffffff;
+}
+
+.bolder-text {
+  font-weight: 700;
+}
+
+.footer-social,
+.footer-card {
+  padding: 0;
+  margin: 48px auto 0 auto;
+}
+
+.footer-social li,
+.footer-card li {
+  display: inline;
+}
+
+.socicon_american-express {
+  width: 30px;
+  height: 30px;
+  background-position: -185px 5px;
+}
+
+.socicon_paypal {
+  width: 30px;
+  height: 30px;
+  background-position: -217px 5px;
+}
+
+.socicon_visa {
+  width: 30px;
+  height: 30px;
+  background-position: -250px 5px;
+}
+
+.socicon_discover {
+  width: 30px;
+  height: 30px;
+  background-position: -282px 5px;
+}
+
+.socicon_facebook_white {
+  width: 25px;
+  height: 30px;
+  background-position: -84px 4px;
+}
+
+.socicon_youtube_white {
+  width: 25px;
+  height: 30px;
+  background-position: -106px 3px;
+}
+
+.socicon_twitter_white {
+  width: 25px;
+  height: 30px;
+  background-position: -133px 4px;
+}
+
+.socicon_trello_white {
+  width: 25px;
+  height: 30px;
+  background-position: -160px 4px;
+}
+
+.h-element::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -42px;
+  right: 50%;
+  width: 247px;
+  height: 24px;
+  margin-right: -123px;
+  background-image: url("../img/decor-white.png");
+  background-repeat: no-repeat;
+}
+
+.hero .h-element::after {
+  width: 232px;
+  height: 43px;
+  bottom: -68px;
+  background-image: url("../img/decor-hero.png");
+}
+
+.reviews__text::before {
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 32px;
+  height: 25px;
+  font-family: "Georgia";
+  font-size: 96px;
+  opacity: 0.5;
+}
+
+.about .h-element::after,
+.menu .h-element::after,
+.reservations .h-element::after {
+  background-image: url("../img/decor-gold.png");
+}
+
+.site-nav-curent {
+  position: relative;
+}
+
+.site-nav-curent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 3px;
+  right: 10px;
+  left: 10px;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+
+.site-nav__link:hover,
+.socicon:hover {
+  transform: scale(1.2);
+}
